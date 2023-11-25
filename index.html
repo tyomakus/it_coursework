@@ -1,15 +1,14 @@
 <!DOCTYPE HTML>
-<!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Coursework</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/itc-slider.css">
+		<!-- JavaScript -->
+		<script src="assets/js/itc-slider.js" defer></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -125,7 +124,21 @@
 					<header class="major">
 						<h2>Мемная галлерея</h2>
 					</header>
+
 					<div class="row.aln-middle">
+						<div id="slider">
+							<div class="slider-container">
+							  <img src="images/pic02.jpg" alt="image1" class="active">
+							  <img src="images/pic03.jpg" alt="image2">
+							  <img src="images/pic04.jpg" alt="image3">
+							</div>
+							<div class="buttons">
+							  <button class="prev">Previous</button>
+							  <button class="next">Next</button>
+							</div>
+						  </div>
+
+						  <script src="assets/js/script.js"></script>
 						<div class="col-4">
 							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
 							<h3>Про курсачи</h3>

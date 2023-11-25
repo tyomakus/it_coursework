@@ -3504,3 +3504,44 @@ input, select, textarea {
 			}
 
 	}
+
+	#slider {
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+	  }
+	  
+	  .slider-container img {
+		transition: all 0.5s ease;
+		opacity: 0;
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	  }
+	  
+	  .slider-container img.active {
+		opacity: 1;
+	  }
+	  
+	  .buttons {
+		position: relative;
+		z-index: 2;
+	  }
+	  
+	  .buttons button {
+		border: 1px solid #ccc;
+		width: 100px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		color: #fff;
+		background-color: black;
+		font-weight: bold;
+		opacity: 0.9;
+	  }
+	  
+	  .buttons button:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	  }
