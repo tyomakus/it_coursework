@@ -78,7 +78,7 @@
     });
   
   })();
-
+/*Timer*/
   class CountdownTimer {
     constructor(deadline, cbChange, cbComplete) {
       this._deadline = deadline;
@@ -138,7 +138,7 @@
       elMinutes1.dataset.title = timer.minutesTitle;
       elSeconds1.dataset.title = timer.secondsTitle;
     }, () => {
-      document.querySelector('.timer-1 .timer__result').textContent = 'Таймер завершился!';
+      document.querySelector('.timer-1 .timer__result').textContent = 'Таймер завершился! Хочецца 5';
     });
 
     // .timer-2 (до конца месяца)
@@ -146,7 +146,7 @@
     const elHours2 = document.querySelector('.timer-2 .timer__hours');
     const elMinutes2 = document.querySelector('.timer-2 .timer__minutes');
     const elSeconds2 = document.querySelector('.timer-2 .timer__seconds');
-    const deadline2 = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01);
+    const deadline2 = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0o1);
     new CountdownTimer(deadline2, (timer) => {
       elDays2.textContent = timer.days;
       elHours2.textContent = timer.hours;

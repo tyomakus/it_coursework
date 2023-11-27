@@ -3505,7 +3505,7 @@ input, select, textarea {
 
 	}
 
-/* MAIN STYLES */
+/* carousel */
 .b-carousel {
 	width: 100%;
 	overflow: hidden;
@@ -3559,3 +3559,52 @@ input, select, textarea {
 		  object-fit: cover;
 		  display: block;
 		}
+
+/*Timer*/
+		.timer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		  }
+	  
+		  .timer__items {
+			display: flex;
+			font-size: 48px;
+		  }
+	  
+		  .timer__item {
+			position: relative;
+			min-width: 60px;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding-bottom: 25px;
+			text-align: center;
+		  }
+	  
+		  .timer__item::before {
+			content: attr(data-title);
+			display: block;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			font-size: 14px;
+		  }
+	  
+		  .timer__item:not(:last-child)::after {
+			content: ':';
+			position: absolute;
+			right: -15px;
+		  }
+	  
+		  .timer__result {
+			text-align: center;
+			padding: 10px;
+			color: rgb(119, 39, 176);
+			font-weight: bold;
+		  }
+	  
+		  hr {
+			border-color: #fafafa;
+			border-style: solid;
+		  }
