@@ -3504,3 +3504,58 @@ input, select, textarea {
 			}
 
 	}
+
+/* MAIN STYLES */
+.b-carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+  
+	box-sizing: border-box;
+	border: 1px solid;
+  }
+  
+	.b-carousel__prev,
+	.b-carousel__next {
+	  position: absolute;
+	  top: 50%;
+	  left: 20px;
+	  width: 50px;
+	  height: 50px;
+	  background: #fff;
+	  transform: translateY(-50%) translateZ(0);
+	  cursor: pointer;
+	  text-indent: 100%;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  z-index: 3;
+	}
+  
+	  .b-carousel__next {
+		left: auto;
+		right: 20px;
+	  }
+  
+	.b-carousel__wrap {
+	  display: flex;
+	  transition: transform .5s;
+	  will-change: transform;
+	  position: relative;
+	  z-index: 1;
+	  height: 100%;
+	}
+  
+	  .b-carousel__item {
+		flex: 0 0 100%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+  
+		.b-carousel__img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		  display: block;
+		}
